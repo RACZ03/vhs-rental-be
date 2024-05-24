@@ -1,0 +1,25 @@
+# VHS Movie Rental Management System
+
+This is a management system for a store that rents movies in VHS cassette format. It allows keeping track of available movies, customers who have borrowed a movie, and loan dates.
+
+## Features
+
+- Register movies with title, category, year, summary, and availability.
+- Register customers with first name, last name, phone, and email.
+- Record movie loans to customers, including loan date and return date.
+- User-friendly interface.
+- Filters to search for movies by title, category, and availability.
+- Filters to search for customers by first name, last name, phone, or email.
+
+## Technologies Used
+
+- PHP for the backend.
+- MySQL as the database.
+- Vue.js for the frontend.
+
+## Setup
+
+1. Clone this repository to your local machine.
+2. Configure the MySQL database and ensure you have the correct credentials in the `.env` file.
+3. Import the provided SQL file into your MySQL database.
+4. Start the PHP server.
