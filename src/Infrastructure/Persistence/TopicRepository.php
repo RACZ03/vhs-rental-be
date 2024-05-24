@@ -16,7 +16,7 @@ class TopicRepository implements TopicRepositoryInterface
 
     public function getAllTopics()
     {
-        $stmt = $this->connection->query("SELECT * FROM topics WHERE state = 1");
+        $stmt = $this->connection->query("SELECT * FROM topics WHERE state = 1 ORDER BY id DESC");
         return $stmt->fetch_all(MYSQLI_ASSOC);
     }
 

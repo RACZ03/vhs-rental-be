@@ -21,7 +21,7 @@ class LoanMovieRepository implements LoanMovieRepositoryInterface
                                             FROM loan_movies lm
                                             JOIN movies m ON lm.movie_id = m.id
                                             JOIN topics t ON m.topic_id = t.id
-                                            JOIN clients c ON lm.client_id = c.id");
+                                            JOIN clients c ON lm.client_id = c.id ORDER BY lm.id DESC");
         return $stmt->fetch_all(MYSQLI_ASSOC);
     }
 

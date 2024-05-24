@@ -17,7 +17,7 @@ class MySQLClientRepository implements ClientRepositoryInterface
 
     public function getAllClient()
     {
-        $stmt = $this->connection->query("SELECT * FROM clients WHERE state = 1");
+        $stmt = $this->connection->query("SELECT * FROM clients WHERE state = 1 ORDER BY id DESC");
         return $stmt->fetch_all(MYSQLI_ASSOC);
     }
 

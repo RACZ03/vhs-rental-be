@@ -66,7 +66,6 @@ try {
     $router->addRoute('POST', '/returnMovies', 'Controllers\ReturnMovieController', 'store');
     $router->addRoute('PUT', '/returnMovies/{id}', 'Controllers\ReturnMovieController', 'update');
     $router->addRoute('DELETE', '/returnMovies/{id}', 'Controllers\ReturnMovieController', 'delete');
-
     // Statistics
     $router->addRoute('GET', '/statistics', 'Controllers\StatisticsController', 'index');
 

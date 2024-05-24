@@ -55,6 +55,7 @@ class MigrationService
                                     state TINYINT(1) DEFAULT 1
                                 )",
                 'return_movies' => "CREATE TABLE IF NOT EXISTS return_movies (
+                                        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
                                         client_id INT(6),
                                         movie_id INT(6),
                                         return_date DATETIME,
